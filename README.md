@@ -1,6 +1,6 @@
 # figma-to-website
 
-this project change figma design to front-end responsive websit use react js and use function component for easy to read__
+this project change figma design to front-end responsive websit use react js and use function component for easy to read
 
 
 # resource 
