@@ -16,10 +16,11 @@ body{
 }
 
 section{
-  padding: 15px 10rem;
+  padding: 15px 13rem;
   display: flex;
   flex-wrap: wrap;
   flex-basis: 100%;
+  max-width: 2500px;
 }
 
 .btn{

@@ -24,6 +24,7 @@ width: 60%;
   display: flex; /* Use flexbox to create a two-column layout */
   justify-content: space-between; /* Space evenly between the two columns */
   align-items: start; /* Align items vertically in the center */
+  flex-basis: 100%;
 }
 .column{
     .column {
