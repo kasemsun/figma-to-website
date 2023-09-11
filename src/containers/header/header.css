@@ -1,0 +1,39 @@
+.title{
+    color: #224F34;
+    font-family: Rufina;
+    font-size: 86px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 70%;
+;
+}
+
+.sub-title{
+    color: #267D49;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 220%; /* 52.8px */
+
+width: 60%;
+}
+
+.header-container{
+  display: flex; /* Use flexbox to create a two-column layout */
+  justify-content: space-between; /* Space evenly between the two columns */
+  align-items: start; /* Align items vertically in the center */
+}
+.column{
+    .column {
+        flex: 1; /* Each column takes up an equal amount of space */
+        padding: 20px; /* Add padding for spacing between columns and content */
+        border: 1px solid #ccc; /* Optional: Add a border for visual separation */
+      }
+}
+img{
+    height: 717px;
+    width: auto;
+    padding: 80px 0px 100px 100px;
+}
