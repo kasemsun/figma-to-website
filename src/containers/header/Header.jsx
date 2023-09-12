@@ -4,8 +4,8 @@ import "./header.css";
 
 const Header = (props) => {
   return (
-    <header>
-      <section>
+    <header className="header">
+      <div className="container">
         <Navbar />
         <div className="header-container">
           <div className="column">
@@ -18,11 +18,11 @@ const Header = (props) => {
 
             <button className="btn btn-primary">Explore Now</button>
           </div>
-          <div className="column">
+          <div className="column-right">
             <img src={mask}/>
           </div>
         </div>
-      </section>
+      </div>
     </header>
   );
 };

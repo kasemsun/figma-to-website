@@ -15,7 +15,7 @@ body{
   background-color: #FFFF;
 }
 
-section{
+.container{
   padding: 15px 13rem;
   display: flex;
   flex-wrap: wrap;
@@ -54,7 +54,7 @@ section{
   border: 2px solid var(--color-secondary);
 } 
 
-header{
+.header{
   background-color: var(--color-bg);
   display: flex;
   justify-content:center;

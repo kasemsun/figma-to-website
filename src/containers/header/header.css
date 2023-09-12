@@ -1,40 +1,57 @@
-.title{
+.title {
     color: #224F34;
-    font-family: Rufina;
+    font-family: Rufina,sans-serif;
     font-size: 86px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     width: 70%;
-;
 }
 
-.sub-title{
+.sub-title {
     color: #267D49;
-font-family: Poppins;
-font-size: 24px;
-font-style: normal;
-font-weight: 500;
-line-height: 220%; /* 52.8px */
-
-width: 60%;
+    font-family: Poppins,sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 220%; /* 52.8px */
+    width: 60%;
 }
+
 
 .header-container{
-  display: flex; /* Use flexbox to create a two-column layout */
-  justify-content: space-between; /* Space evenly between the two columns */
-  align-items: start; /* Align items vertically in the center */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
   flex-basis: 100%;
 }
+/* Default styles for the two columns */
 .column{
-    .column {
-        flex: 1; /* Each column takes up an equal amount of space */
-        padding: 20px; /* Add padding for spacing between columns and content */
-        border: 1px solid #ccc; /* Optional: Add a border for visual separation */
-      }
+  flex: 2;
 }
+
+.column-right{
+  flex: 1;
+  display: flex;
+  justify-content: right;
+  padding: 70px 0px;
+}
+
 img{
-    height: 717px;
+    height: 700px;
     width: auto;
-    padding: 80px 0px 100px 100px;
+    align-items: center;
+}
+
+/* Media query for screens smaller than a certain size (e.g., 768px) */
+@media screen and (max-width: 1400px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .column {
+    width: 100%;
+  }
 }
