@@ -3,7 +3,7 @@ import './footer.css';
 const Footer= (props) => {
     return (
         <footer className='footer'>
-            <div className='container'>
+            <section className='container'>
                 <div className='row'>
                 <div className='footer-col'>
                     <h1 className='footer-logo'>
@@ -66,11 +66,25 @@ const Footer= (props) => {
 </ul>
                 </div>
                 <div className='footer-col'>
- <h4>Stay up to date</h4>
- <input type="text" />
+    <h4>Stay up to date</h4>
+    <div className='input-date'>
+    <input type="text" />
+
+<button className='submit-btn'>SUBMIT</button>      
+    </div>
+   
+ 
                 </div>
                 </div>
-            </div>
+                <section className='term'>
+                        <hr />
+                        <ul className='term-list'>
+                            <li>Terms</li>
+                            <li>Privacy</li>
+                            <li>Cookies</li>
+                        </ul>
+                </section>
+            </section>
         </footer>
     );
 };

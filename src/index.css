@@ -62,4 +62,6 @@ body{
 
 footer{
   background-color: var(--color-prinmary);
+  display: flex;
+  justify-content:center;
 }
