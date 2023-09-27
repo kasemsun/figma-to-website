@@ -2,66 +2,12 @@
 
 :root {
   --font-family: 'Poppins', sans-serif;
+  --font-family-logo: 'Elephant', sans-serif;
+  --font-family-title: 'Rufina', sans-serif;
   --color-bg: #C2EFD4;
   --color-prinmary : #224F34;
   --color-secondary: #267D49;
   --color-subtext-1: #373737;
   --color-subtext-2: #454545;
-}
-
-body{
-  padding: 0;
-  margin: 0;
-  background-color: #FFFF;
-}
-
-.container{
-  padding: 15px 13rem;
-  display: flex;
-  flex-wrap: wrap;
-  flex-basis: 100%;
-  max-width: 2500px;
-}
-
-.btn{
-  cursor: pointer;
-} 
-
-.btn-primary{
-  border-radius: 3px;
-  color: #FFFF;
-  background-color: var(--color-prinmary);
-  padding: 15px 45px;
-  transition: all 0.3s ease 0s;
-}
-
-.btn-primary:hover{
-  background-color: #267D49;
-  color: #454545;
-} 
-
-.btn-secondary{
-  border-radius: 3px;
-  border: 2px solid var(--color-prinmary);
-  color: var(--color-prinmary);
-  background-color: transparent;
-  padding: 10px 30px;
-  transition: all 0.3s ease 0s;
-}
-
-.btn-secondary:hover{
-  color: var(--color-secondary);
-  border: 2px solid var(--color-secondary);
-} 
-
-.header{
-  background-color: var(--color-bg);
-  display: flex;
-  justify-content:center;
-}
-
-footer{
-  background-color: var(--color-prinmary);
-  display: flex;
-  justify-content:center;
+  --color-white: #FFFF;
 }

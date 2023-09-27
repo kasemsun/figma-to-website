@@ -1,28 +1,20 @@
-import { Navbar } from "../../components";
 import {mask} from './imports';
 import "./header.css";
 
-const Header = (props) => {
+const Header = () => {
   return (
-    <header className="header">
-      <div className="container">
-        <Navbar />
-        <div className="header-container">
-          <div className="column">
-            <p className="title">Discover and Find Your Own Fashion!</p>
-
-            <p className="sub-title">
-              Explore our curated collection of stylish clothing and accessories
-              tailored to your unique taste.
+    <header className="fasion__header section_padding">
+        <div className="fasion__header-container">
+            <h1 >Discover and  <br />Find Your Own  <br />Fashion!</h1>
+            <p >
+              Explore our curated collection of stylish <br /> clothing and accessories
+              tailored to your <br />unique taste.
             </p>
-
             <button className="btn btn-primary">Explore Now</button>
-          </div>
-          <div className="column-right">
+        </div>
+        <div className="fasion__header-image">
             <img src={mask}/>
           </div>
-        </div>
-      </div>
     </header>
   );
 };

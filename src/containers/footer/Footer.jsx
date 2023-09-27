@@ -68,7 +68,7 @@ const Footer= (props) => {
                 <div className='footer-col'>
     <h4>Stay up to date</h4>
     <div className='input-date'>
-    <input type="text" />
+    <input type="text" placeholder='Enter your email'/>
 
 <button className='submit-btn'>SUBMIT</button>      
     </div>

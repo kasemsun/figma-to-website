@@ -1,13 +1,18 @@
 import './App.css'
-import { Header ,Footer} from './containers';
+import {Navbar} from './components';
+import { Header,BestSelling,ClothesForYou,FeedbackCorner,Offer,Products ,Footer} from './containers';
 
 function App() {
 
   return (
-    <>
-    <Header/>
-    <Footer/>
-    </>
+    <div className='App'>
+      <div className="top__bg">
+        <Navbar/>
+        <Header/>
+      </div>
+      <BestSelling/>
+      <Footer/>
+    </div>
   )
 }
 

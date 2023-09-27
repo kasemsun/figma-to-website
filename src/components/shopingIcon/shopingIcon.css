@@ -1,17 +1,28 @@
 .shopping-icon{
     z-index: 3;
-    position: absolute;
     cursor: pointer;
-    top: -15px;
 }
 
 .shopping-container{
+    display: block;
     position: relative;
 }
 
 .number{
-    position: absolute; /* Position the container relative to its normal position */
-    top: 0px; /* Adjust the vertical position as needed to place it below the icon */
+    top: 15px; /* Adjust the vertical position as needed to place it below the icon */
     left: 15px;
     z-index: 50;
+    position: absolute;
+}
+
+
+@media screen and (max-width: 550px) {
+    .number{
+        top: 15px; 
+        left: 75px;
+    }
+
+    .shopping-container{
+        margin-bottom: 10px;
+    }
 }
