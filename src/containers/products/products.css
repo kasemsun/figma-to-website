@@ -1,0 +1,40 @@
+.fasion__product-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.fasion__product-container h2{
+    text-align: center;
+    color: #224F34;
+font-family: Roboto Slab;
+font-size: 50px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-bottom: 3rem;
+}
+
+
+.fasion__product-container .fasion__product-tabs{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin-bottom: 2rem;
+}
+
+.fasion__product-tabs{
+    color: #454545;
+font-family: Poppins;
+font-size: 22px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: uppercase;
+}
+
+    .fasion__product-tabs p:nth-child(2){
+    color: #224F34;
+    border-bottom: 4px solid #224F34;
+    padding-bottom: 10px;
+    }

@@ -1,12 +1,13 @@
 import { ProductCard } from '../../components';
 import './bestselling.css';
+import {black_crop,sunset_shirt,regular_fit} from './imports';
 
 const BestSelling= (props) => {
 
     const products = [
-    {name:'Regular Fit Long Sleeve Top',image:'',price:38.99,star:5.0},
-    {name:'Black Crop Tailored Jacket',image:'',price:62.99,star:4.9},
-    {name:'Textured Sunset Shirt',image:'',price:49.99,star:5.0},
+    {name:'Regular Fit Long Sleeve Top',image:regular_fit,price:38.99,star:5.0},
+    {name:'Black Crop Tailored Jacket',image:black_crop,price:62.99,star:4.9},
+    {name:'Textured Sunset Shirt',image:sunset_shirt,price:49.99,star:5.0},
     ];
 
     return (
@@ -16,7 +17,7 @@ const BestSelling= (props) => {
                 <p>Get in on the trend with our curated selection of best-selling styles.</p>
                 <div className='fasion__product-card-container'>
                 {products.map((p,index) => (
-                    <ProductCard key={index} name={p.name} price={p.price} star={p.star} image={p.image}/>
+                    <ProductCard key={index} width={420} name={p.name} price={p.price} star={p.star} image={p.image}/>
                 ))}
                 </div>
                 <button className='btn btn-secondary'>See all <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16" fill="none">
