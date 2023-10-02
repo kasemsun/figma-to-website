@@ -15,11 +15,11 @@ a {
 }
 
 .section_padding{
-    padding: 2rem 6rem;
+    padding: 2rem 8rem;
 }
 
 .section_margin{
-    margin: 2rem 6rem;
+    margin: 2rem 8rem;
 }
 
 .scale-up-center {
@@ -44,6 +44,12 @@ a {
     background-color: var(--color-prinmary);
     padding: 1rem 2rem;
     transition: all 0.3s ease 0s;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: uppercase;
   }
   
   .btn-primary:hover{
@@ -93,21 +99,31 @@ a {
 }
 
 @media screen and (max-width: 700px) {
-    .section__padding {
+    .section_padding {
       padding: 4rem;
     }
   
-    .section__margin {
+    .section_margin {
       margin: 4rem;
     }
   }
   
   @media screen and (max-width: 550px) {
-    .section__padding {
+    .section_padding {
       padding: 4rem 2rem;
     }
   
-    .section__margin {
+    .section_margin {
       margin: 4rem 2rem;
+    }  
+  }
+
+  @media screen and (max-width: 400px) {
+    .section_padding {
+      padding: 1rem 1rem;
+    }
+  
+    .section_margin {
+      margin: 1rem 1rem;
     }  
   }

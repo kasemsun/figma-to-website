@@ -1,5 +1,6 @@
 import './products.css';
 import ProductCard from '../../components/productCard/ProductCard';
+import TabProduct from '../../components/tabProduct/TabProduct';
 import { spread_collar_shirt,white_solid_formal_shirt,shine_on_me_blouse,gray_solid_padded_jacket,printed_loose_t_shirt,
     summer_wind_crop_shirt,tailored_jacket,solid_round_neck_shirt} from './imports'
 
@@ -20,12 +21,7 @@ const Product= (props) => {
         <section className='section_padding'>
             <div className='fasion__product-container'>
                 <h2>Our products</h2>
-                <div className='fasion__product-tabs'>
-                    <p>Sale</p>
-                    <p>HOT</p>
-                    <p>New Arrivals</p>
-                    <p>Accessories</p>
-                </div>
+                <TabProduct/>
                 <section className='fasion__product-card-container'>
                 {products.map((p,index) => (
                     <ProductCard key={index} width={300} name={p.name} price={p.price} star={p.star} image={p.image} />

@@ -2,9 +2,10 @@ import './feedbackCorner.css';
 
 const FeedbackCorner= (props) => {
     return (
-        <div>
-            Hello
-        </div>
+        <section className='fasion__feedback-container section_padding'>
+            <h3>Feedback Corner</h3>
+
+        </section>
     );
 };
 

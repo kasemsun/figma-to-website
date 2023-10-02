@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 3rem 3rem;
+    padding: 3rem 0rem;
     cursor: pointer;
 }
 
@@ -15,7 +15,7 @@
 .fasion__product-card h4{
     text-align: center;
     margin-bottom: 1.5rem;
-    color: #373737;zy
+    color: #373737;
 font-family: Poppins;
 font-size: 22px;
 font-style: normal;
@@ -33,4 +33,16 @@ line-height: normal;
 align-items: center;
     display: inline-flex;
     justify-content: center;
+}
+
+@media screen and (max-width: 550px) {
+    .fasion__product-card img{
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .fasion__product-card img{
+        max-width: 300px;
+    }
 }
