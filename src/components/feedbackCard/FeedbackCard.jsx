@@ -1,9 +1,12 @@
 import './feedbackCard.css';
 
 const FeedbackCard= (props) => {
+
+    const {name,commet} = props; 
     return (
         <div>
-            Hello
+           {name}
+           {commet}
         </div>
     );
 };

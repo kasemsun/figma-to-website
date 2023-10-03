@@ -2,9 +2,11 @@
     position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     padding: 3rem 0rem;
     cursor: pointer;
+    max-width: 420px;
 }
 
 .fasion__product-card img{
@@ -25,24 +27,26 @@ line-height: normal;
 
 .fasion__product-card div{
     color: #454545;
-font-family: Poppins;
-font-size: 22px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-align-items: center;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    align-items: center;
     display: inline-flex;
     justify-content: center;
+    text-align: center;
+    
 }
 
 @media screen and (max-width: 550px) {
-    .fasion__product-card img{
+    .fasion__product-card{
         max-width: 400px;
     }
 }
 
 @media screen and (max-width: 400px) {
-    .fasion__product-card img{
+    .fasion__product-card{
         max-width: 300px;
     }
 }

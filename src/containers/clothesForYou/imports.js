@@ -1,6 +1,6 @@
-import black_crop from '../../assets/black_crop.png';
-import regular_fit from '../../assets/regular_fit.png';
-import sunset_shirt from '../../assets/sunset_shirt.png';
+import accessoires from '../../assets/accessoires.png';
+import dresses from '../../assets/dresses.png';
+import outerwear from '../../assets/outerwear.png';
 export {
-    black_crop,regular_fit,sunset_shirt
+    accessoires,dresses,outerwear
 };

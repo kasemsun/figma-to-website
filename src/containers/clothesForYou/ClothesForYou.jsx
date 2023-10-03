@@ -1,13 +1,13 @@
 import './clothesForYou.css';
-import {black_crop,sunset_shirt,regular_fit} from './imports';
+import {accessoires,dresses,outerwear} from './imports';
 import { ProductCard } from '../../components';
 
 const ClothesForYou= (props) => {
 
     const products = [
-        {name:'Regular Fit Long Sleeve Top',image:regular_fit,price:38.99,star:5.0},
-        {name:'Black Crop Tailored Jacket',image:black_crop,price:62.99,star:4.9},
-        {name:'Textured Sunset Shirt',image:sunset_shirt,price:49.99,star:5.0},
+        {name:'Accessories',image:accessoires,detail:"Complete your ensemble with designer accessories such as handbags, scarves, belts, and hats."},
+        {name:'Dresses',image:dresses,detail:"Explore a stunning range of designer dresses, including evening gowns and chic day dresses."},
+        {name:'Outerwear',image:outerwear,detail:"Browse luxurious designer coats, jackets, and blazers to stay stylishly warm during colder seasons."},
         ];
 
     return (
@@ -16,7 +16,7 @@ const ClothesForYou= (props) => {
             <p>Immerse yourself in the world of luxury fashion with our meticulously crafted designer clothes!</p>
             <div className='fasion__product-card-container'>
             {products.map((p,index) => (
-                    <ProductCard key={index} width={420} name={p.name} price={p.price} star={p.star} image={p.image}/>
+                    <ProductCard key={index} width={420} name={p.name} image={p.image} detail={p.detail} isDesign={true}/>
                 ))}
             </div>
 
