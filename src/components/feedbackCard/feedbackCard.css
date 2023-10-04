@@ -1,0 +1,44 @@
+.fasion__feedbace-card{
+    width: 434px;
+    height: 253px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    background: #C2EFD4;
+    box-shadow: 0px 7px 30px 0px rgba(0, 0, 0, 0.05);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.fasion__feedbace-card .fasion__feedbace-card-logo{
+    color: #224F34;
+    font-family: Arial 'Rounded MT' Bold;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+}
+
+.fasion__feedbace-card div{
+    color: #224F34;
+font-family: Roboto Serif;
+font-size: 22px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-top: 15%;
+margin-bottom: 10px;
+}
+
+.fasion__feedbace-card p{
+    color: #224F34;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-wrap: wrap;
+margin: 0;
+}

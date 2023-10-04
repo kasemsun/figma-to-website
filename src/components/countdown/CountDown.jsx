@@ -1,10 +1,9 @@
 import './countdown.css';
-
 import React, { useState, useEffect } from 'react';
 
 const CountDown = (props) => {
   // Set your target date here
-  const targetDate = new Date('2023-10-15T00:00:00Z'); // Example: October 15, 2023, at midnight UTC
+  const targetDate = new Date('2023-12-31T00:00:00Z'); // Example: December 31, 2023, at midnight UTC
 
   const [countdown, setCountdown] = useState({
     days: 0,
@@ -13,40 +12,24 @@ const CountDown = (props) => {
   });
 
   useEffect(() => {
-    const intervalId = setInterval(() => {
-      const currentDate = new Date();
-      const timeDifference = targetDate - currentDate;
+    const worker = new Worker('countdown-worker.js');
 
-      if (timeDifference <= 0) {
-        // The countdown has ended
-        clearInterval(intervalId);
-      } else {
-        const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-        const hours = Math.floor(
-          (timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-        );
-        const minutes = Math.floor(
-          (timeDifference % (1000 * 60 * 60)) / (1000 * 60)
-        );
+    worker.addEventListener('message', (e) => {
+      setCountdown(e.data.countdown);
+    });
 
-        setCountdown({
-          days,
-          hours,
-          minutes,
-        });
-      }
-    }, 1000); // Update every second
-
-    // Clean up the interval on unmount
-    return () => clearInterval(intervalId);
+    worker.postMessage({ targetDate });
+    return () => {
+      worker.terminate();
+    };
   }, []);
 
   return (
-    <div>
-      <div>Days: {countdown.days}</div>
-      <div>Hours: {countdown.hours}</div>
-      <div>Minutes: {countdown.minutes}</div>
-    </div>
+    <section className='fasion__countdown-container'>
+      <div><h3>{countdown.days}</h3> <p>Days</p></div>
+      <div><h3>{countdown.hours}</h3> <p>Hours</p></div>
+      <div><h3>{countdown.minutes}</h3> <p>Minutes</p></div>
+    </section>
   );
 };
 

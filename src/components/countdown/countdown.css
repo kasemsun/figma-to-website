@@ -1,0 +1,41 @@
+.fasion__countdown-container{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.fasion__countdown-container div{
+    border-radius: 3px;
+    background: #FFF;
+    box-shadow: 0px 7px 30px 0px rgba(0, 0, 0, 0.05);
+    padding: 1rem;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fasion__countdown-container div h3{
+    color: #224F34;
+font-family: Poppins;
+font-size: 32px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin: 0;
+}
+
+.fasion__countdown-container div p{
+    color: #224F34;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-align: center;
+margin: 0;
+}
