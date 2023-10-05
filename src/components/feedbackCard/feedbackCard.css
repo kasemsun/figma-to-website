@@ -9,11 +9,12 @@
     display: flex;
     flex-direction: column;
     justify-content: start;
+    max-width: 100%;
 }
 
 .fasion__feedbace-card .fasion__feedbace-card-logo{
     color: #224F34;
-    font-family: Arial 'Rounded MT' Bold;
+    font-family: var(--font-family-feedback-card);
     font-size: 60px;
     font-style: normal;
     font-weight: 400;

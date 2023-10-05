@@ -2,6 +2,7 @@
     background-color: var(--color-bg);
     display: flex;
     flex-direction: row;
+    padding: 0 15px;
 }
 
 .fasion__offer-image{
@@ -14,6 +15,7 @@
 .fasion__offer-image img {
     width: 482px;
     height: auto;
+    max-width: 100%;
   }
 
 .fasion__offer-title{
@@ -96,5 +98,5 @@ width: 80%;
       width: 300px;
       height: auto;
     }
-  
+
   }

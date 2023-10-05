@@ -26,9 +26,9 @@ const CountDown = (props) => {
 
   return (
     <section className='fasion__countdown-container'>
-      <div><h3>{countdown.days}</h3> <p>Days</p></div>
-      <div><h3>{countdown.hours}</h3> <p>Hours</p></div>
-      <div><h3>{countdown.minutes}</h3> <p>Minutes</p></div>
+      <div><h3>{countdown.days}</h3> <div>Days</div></div>
+      <div><h3>{countdown.hours}</h3> <div>Hours</div></div>
+      <div><h3>{countdown.minutes}</h3> <div>Minutes</div></div>
     </section>
   );
 };

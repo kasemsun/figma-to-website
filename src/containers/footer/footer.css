@@ -8,6 +8,7 @@
     background: var(--color-prinmary); 
 }
 
+
 .fasion__footer-links {
     display: flex;
     justify-content: space-between;
@@ -31,7 +32,7 @@
 
 .fasion__footer-links-logo h1 {
     
-font-family: 'Elephant' sans-serif;
+font-family: 'Elephant', sans-serif;
 font-size: 50px;
 font-style: normal;
 font-weight: 400;
@@ -40,7 +41,7 @@ margin-bottom: 15px;
 }
 
 .fasion__footer-links-logo p {
-    font-family: 'Roboto Slab' sans-serif;
+    font-family: var(--font-family-footer-link);
     font-size: 22px;
     font-style: normal;
     font-weight: 500;
@@ -69,6 +70,12 @@ margin-bottom: 15px;
 .fasion__footer-links-div h4{
     padding-top: 30px;
     margin-bottom: 15px;
+    font-family: var(--font-family-footer-link);
+    text-transform: uppercase;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
 .fasion__footer-links-div ul{
@@ -124,7 +131,7 @@ text-transform: capitalize;
 }
 
 .fasion__footer-links-input{
-    display: flex;
+    display:flex;
     justify-content: flex-start;
     align-items: center;
 }
@@ -141,6 +148,7 @@ text-transform: capitalize;
     background-color: transparent;
     padding: 6px;
     height: 50px;
+    margin: 0;
 }
 
 .fasion__footer-links-input input:focus{
@@ -162,3 +170,19 @@ text-transform: capitalize;
     cursor: pointer;
     height: 50px;
 }
+
+
+
+@media screen and (max-width: 450px) {
+
+    .fasion__footer-links-input{
+        margin: 0;
+        padding: 0;
+    }
+
+    .fasion__footer-links-input input{
+        width: 200px;
+        margin: 0;
+    }
+    
+  }

@@ -93,7 +93,7 @@ const Footer = (props) => {
             <h4>Stay up to date</h4>
             <div className="fasion__footer-links-input">
               <input type="text" placeholder="Enter your email" />
-              <button className="">SUBMIT</button>
+              <button >SUBMIT</button>
             </div>
           </div>
       </section>
