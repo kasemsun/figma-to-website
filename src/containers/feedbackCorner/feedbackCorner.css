@@ -31,3 +31,20 @@
 .fasion__feedback-btn{
     cursor: pointer;
 }
+
+@media screen and (max-width: 500px) {
+
+
+  
+    .fasion__feedback-container h3 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+  
+    .fasion__feedback-container p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+  
+  }

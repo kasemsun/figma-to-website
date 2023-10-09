@@ -37,3 +37,24 @@ text-transform: uppercase;
     border-bottom: 4px solid #224F34;
     padding-bottom: 10px;
     }
+
+
+    @media screen and (max-width: 500px) {
+
+    
+        .fasion__product-container {
+          margin-top: 0.25rem;
+        }
+      
+        .fasion__product-container h2 {
+            font-size: 36px;
+            line-height: 48px;
+        }
+      
+        .fasion__product-container p {
+            font-size: 14px;
+            line-height: 24px;
+        }
+    
+      
+      }
