@@ -10,7 +10,7 @@ const ProductCard= (props) => {
 
     return (
         <div className='fasion__product-card'>
-            <img width={width} src={image} alt="" />
+            <img width={width} src={image} alt=""  loading="lazy"/>
             <h4>{name}</h4>
             {isDesign?
             <div className='fasion__product-card-detail'>

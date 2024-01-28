@@ -13,7 +13,7 @@ const Header = () => {
             <button className="btn btn-primary">Explore Now</button>
         </div>
         <div className="fasion__header-image">
-            <img src={mask}/>
+            <img  loading="lazy" src={mask}/>
           </div>
     </header>
   );

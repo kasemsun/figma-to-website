@@ -7,7 +7,7 @@ const Offer= (props) => {
         <section className='section_padding'>
             <div className='fasion__offer-container'>
             <div className="fasion__offer-image">
-            <img src={mask}/>
+            <img  loading="lazy" src={mask}/>
             </div>
             <div className="fasion__offer-title">
             <h3 >Exclusive offer</h3>
