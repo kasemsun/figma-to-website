@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 
 const CountDown = (props) => {
   // Set your target date here
-  const targetDate = new Date('2023-12-31T00:00:00Z'); // Example: December 31, 2023, at midnight UTC
+  const targetDate = new Date('2024-06-31T00:00:00Z'); // Example: December 31, 2023, at midnight UTC
 
   const [countdown, setCountdown] = useState({
     days: 0,
